@@ -1,0 +1,6 @@
+{
+  "project_name": "My New Project",
+  "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+  "folder_name": "{{ cookiecutter.project_slug|replace('-', '_') }}",
+  "use_env": ["y", "n"]
+}
