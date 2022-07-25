@@ -2,5 +2,9 @@
   "project_name": "My New Project",
   "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
   "folder_name": "{{ cookiecutter.project_slug|replace('-', '_') }}",
+  "python_version": ["stable", "3.11", "3.10", "3.9", "3.8", "3.7"],
+  "__python_version": "{{ cookiecutter.python_version|replace('stable', '3.10') }}",
+  "python_distribution": ["default", "buster", "slim-buster", "alpine", "bullseye", "slim-bullseye"],
+  "__python_distribution": "{{ ('-'+cookiecutter.python_distribution)|replace('-default', '') }}",
   "use_env": ["y", "n"]
 }

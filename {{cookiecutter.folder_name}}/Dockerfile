@@ -1,4 +1,4 @@
-FROM python:3.9.1
+FROM python:{{ cookiecutter.__python_version }}{{ cookiecutter.__python_distribution }}
 
 ENV PYTHONFAULTHANDLER=1 \
     PYTHONUNBUFFERED=1 \
